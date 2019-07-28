@@ -1,0 +1,185 @@
+
+.app-container {
+    background: #f4fffc;
+    padding: 0;
+    box-shadow: 1px -2px 10px 3px grey;
+}
+.app-title {
+background: url(images/math.jpg) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.app-title-item {
+    color: #59bff2;
+    padding: 20px;
+}
+.app-navbar, .hamburger-navbar {
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 6px 5px grey;
+    z-index: 20;
+    border: 10px double #59bff2;
+}
+.nav-link {
+    border-right: 1px solid #59bff2;
+    color: #59bff2;
+    font-weight: bold;
+}
+.nav-link:hover {
+    background-color: #59bff2;
+    color: white;
+    text-decoration: none;
+}
+.hamburger-navbar {
+    display: none;
+}
+.volunteer {
+    border-right: none;
+}
+.hamburger {
+    display: none;
+}
+.my-image {
+    text-align: center;
+    z-index: 1
+}
+.portfolio-menus-row {
+    justify-content: center;
+}
+.button {
+    background: #59bff2;
+    color: #f4fffc;
+    padding: 10px;
+    border: none;
+    width: 270px;
+    font-weight: bold;
+    transition: transform 1s ease-in-out;
+}
+.button:hover, .technologies-used img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    text-decoration: none;
+    color: #f4fffc;
+}
+.menu-left-buttons {
+    border-top-left-radius: 97px;
+    border-bottom-left-radius: 97px;
+    text-align: left;
+    margin-right: -43px;
+    padding-left: 20px;
+}
+.menu-right-buttons {
+    border-top-right-radius: 97px;
+    border-bottom-right-radius: 97px;
+    text-align: right;
+    margin-left: -43px;
+    padding-right: 20px;
+}
+.app-menu-sides {
+    margin-top: 42px;
+}
+.app-menu-item {
+    height: 74px;
+}
+.primary-heading{
+    background-color: #59bff2;
+    color: #f4fffc;
+    padding: 10px;
+    margin-top: 40px;
+}
+.secondary-heading {
+    color: #59bff2;
+    border: 1px solid #59bff2;
+    padding: 5px 10px;
+}
+.text-styles {
+    color: #59bff2;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.technologies-used img {
+    width: 132px;
+}
+.hat {
+    width: 25px;
+    padding-right: 0;
+}
+.hat-list {
+    padding: 0;
+}
+
+.target:target::before {
+    content: "";
+    display: block;
+    height: 30px; /* fixed header height*/
+    margin: -30px 0 0; /* negative fixed header height */
+}
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 993px) {
+    .app-container, .container {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 813px) {
+    .secondary-heading {
+        padding: 24px 10px;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .hamburger-navbar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .menu-left-buttons, .menu-right-buttons {
+        display: none;
+    } 
+    .nav-link {
+        border-right: none;
+        border-bottom: 3px double #59bff2;
+        text-align: center;
+    }
+    .volunteer {
+        border: none;
+    }
+    .navbar-nav {
+        width: 100%;
+    }
+    .app-navbar {
+       z-index: -1;
+    }
+    .hamburger {
+        position: sticky;
+        top: 0px;
+        display: block;
+        font-size: 30px;
+        z-index: 10;
+        padding-left: 14px;
+        background-color: #59bff2;
+    }
+    .hamburger i {
+        background: #f4fffc;
+        padding: 6px;
+        margin: 4px;
+        border-radius: 4px;
+        color: #59bff2;
+    }
+    .hamburger i:hover {
+        color: #f4fffc;
+        background: #59bff2;
+        border: 1px solid #f4fffc;
+    }
+    .hamburger-navbar {
+        position: sticky;
+        top: 50px;
+        background: #f4fffc;
+    }
+}
