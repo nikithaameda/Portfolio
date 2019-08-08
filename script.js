@@ -10,6 +10,9 @@ $(document).ready(function(){
         }
     });
     $(".hamburger").click(function() {
-        $(".hamburger-navbar").toggleClass("show")
+        $(".hamburger-navbar").toggleClass("show");
+    });
+    $(".nav-link").click(function() {
+        $(".hamburger-navbar").toggleClass("show");
     });
 });
